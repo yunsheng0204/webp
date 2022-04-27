@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="qz6.css" rel="stylesheet" type="text/css">
+
+<body>
+<h2 id="cgu">CGU TIMER</h2>
+<h1 id="timer"></h1>
+</body>
+
+<script>
+
+
+     var myVar = setInterval(cgutimer, 1000);//每秒呼叫一次
+     function cgutimer() {
+         var d = new Date();
+         var t = d.toLocaleTimeString();
+         $("#timer").html(t);
+     }
+
+</script>
+</head>
+</html>
+     
